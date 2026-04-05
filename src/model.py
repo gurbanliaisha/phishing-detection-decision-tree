@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 1. Load the data
-df = pd.read_csv('data.csv') # <-- Change to your uploaded filename!
+df = pd.read_csv('../data.csv') # <-- Change to your uploaded filename!
 
 # 🌟 THE FIX: Remove any rows where 'ClassLabel' is empty (NaN)
 df = df.dropna(subset=['ClassLabel'])
